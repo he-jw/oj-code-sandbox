@@ -43,7 +43,7 @@ public class JavaDockerCodeSandBox implements CodeSandBox {
         executeCodeRequest.setInputList(Arrays.asList("1 2","3 4"));
         // 从main函数的args中读取输入示例的方式
          String code = ResourceUtil.readStr("testCode/simpleComputeArgs/Main.java", StandardCharsets.UTF_8);
-//        String code = ResourceUtil.readStr("testCode/unsafeCode/ProcessError.java", StandardCharsets.UTF_8);
+        // String code = ResourceUtil.readStr("testCode/unsafeCode/ProcessError.java", StandardCharsets.UTF_8);
         // 采用ACM的交互式输入来读取程序的输入示例
         // String code = ResourceUtil.readStr("testCode/simpleCompute/Main.java", StandardCharsets.UTF_8);
         executeCodeRequest.setCode(code);
